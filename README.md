@@ -25,7 +25,7 @@ Messages are received by the server and given a timestamp. With the use of looku
 <br/>
 
 If the tag corresponds to a valid order then the order and the timestamp are saved in a table called CurrentInventory. CurrentInvetory saves only the orders currently stored in the warehouse. Orders are also saved in a table called TransactionHistory that saves all the order movements.
-If the same tag is passed through the reader that means that the package is now leaving the warehouse so it is deleted from the current inventory and the time of exit is stored as DATE_OUT.
+If the same tag is passed through the reader that means that the package is now leaving the warehouse so it is deleted from the current inventory and the time of exit is stored as date-out in TransactionHistory table.
 
 <img align="center"   src="demo/flow.png">
 
